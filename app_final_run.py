@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 import pickle as pkl
 
-clf = pickle.load(open("case_study_university.pkl","rb"))
+clf = pkl.load(open("case_study_university.pkl","rb"))
 
 def predict(data):
-    clf = pickle.load(open("case_study_university.pkl","rb"))
+    clf = pkl.load(open("case_study_university.pkl","rb"))
     return clf.predict(data)
 
 st.title("Case Study On University Admission Prediction")
