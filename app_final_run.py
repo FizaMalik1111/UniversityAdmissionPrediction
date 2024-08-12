@@ -3,7 +3,9 @@ import pandas as pd
 import numpy as np
 import pickle 
 
-clf = pickle.load(open("case_study_university.pkl","rb"))
+with open("case_study_university.pkl", "wb") as f:
+    pickle.dump(model, f)
+#clf = pickle.load(open("case_study_university.pkl","rb"))
 #import pickle
 #pickle.dump(rf,open("case_study_university.pkl","wb"))
 
