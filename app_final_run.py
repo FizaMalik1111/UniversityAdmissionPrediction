@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle as pkl
+import pickle 
 
-clf = pkl.load(open("case_study_university.pkl","rb"))
+clf = pickle.load(open("case_study_university.pkl","rb"))
+#import pickle
+#pickle.dump(rf,open("case_study_university.pkl","wb"))
 
 def predict(data):
-    clf = pkl.load(open("case_study_university.pkl","rb"))
+    clf = pickle.load(open("case_study_university.pkl","rb"))
     return clf.predict(data)
 
 st.title("Case Study On University Admission Prediction")
