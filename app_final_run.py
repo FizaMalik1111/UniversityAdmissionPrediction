@@ -4,7 +4,7 @@ import numpy as np
 import pickle 
 
 #with open("case_study_university.pkl", "wb") as f:
-    pickle.dump(model, f)
+    #pickle.dump(model, f)
 clf = pickle.load(open("case_study_university.pkl","rb"))
 #import pickle
 #pickle.dump(rf,open("case_study_university.pkl","wb"))
